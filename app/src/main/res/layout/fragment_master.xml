@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.edu.neusoft.simplefragmentdemo.MasterFragment"
+    android:background="#FFB6C1"
+    android:padding="5dp">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/master_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="宝宝百天系列"
+        android:textSize="16sp"/>
+    <ImageView
+        android:id="@+id/master_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/i1"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/master_text"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="宝宝一百天了，给他（她）换上几套新装吧。Cute宝贝们闪亮登场。"
+        android:textSize="14sp"
+        android:layout_below="@+id/master_text"
+        android:layout_toRightOf="@+id/master_img"/>
+
+</RelativeLayout>
