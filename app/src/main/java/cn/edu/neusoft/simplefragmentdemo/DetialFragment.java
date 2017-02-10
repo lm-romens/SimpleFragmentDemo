@@ -47,26 +47,31 @@ public class DetialFragment extends Fragment {
         map.put("new_info", "此系列服装有点cute，像不像小车夫。");
         map.put("new_thumb", R.drawable.i1);
         list.add(map);
-        map.put("new_title", "毡帽系列");
-        map.put("new_info", "此系列服装有点cute，像不像小车夫。");
-        map.put("new_thumb", R.drawable.i2);
-        list.add(map);
-        map.put("new_title", "毡帽系列");
-        map.put("new_info", "此系列服装有点cute，像不像小车夫。");
-        map.put("new_thumb", R.drawable.i3);
-        list.add(map);
-        map.put("new_title", "毡帽系列");
-        map.put("new_info", "此系列服装有点cute，像不像小车夫。");
-        map.put("new_thumb", R.drawable.i4);
-        list.add(map);
-        map.put("new_title", "毡帽系列");
-        map.put("new_info", "此系列服装有点cute，像不像小车夫。");
-        map.put("new_thumb", R.drawable.i5);
-        list.add(map);
-        map.put("new_title", "毡帽系列");
-        map.put("new_info", "此系列服装有点cute，像不像小车夫。");
-        map.put("new_thumb", R.drawable.i6);
-        list.add(map);
+        Map<String, Object> map1 = new HashMap<String,Object>();
+        map1.put("new_title", "毡帽系列");
+        map1.put("new_info", "此系列服装有点cute，像不像小车夫。");
+        map1.put("new_thumb", R.drawable.i2);
+        list.add(map1);
+        Map<String, Object> map2 = new HashMap<String,Object>();
+        map2.put("new_title", "毡帽系列");
+        map2.put("new_info", "此系列服装有点cute，像不像小车夫。");
+        map2.put("new_thumb", R.drawable.i3);
+        list.add(map2);
+        Map<String, Object> map3 = new HashMap<String,Object>();
+        map3.put("new_title", "毡帽系列");
+        map3.put("new_info", "此系列服装有点cute，像不像小车夫。");
+        map3.put("new_thumb", R.drawable.i4);
+        list.add(map3);
+        Map<String, Object> map4 = new HashMap<String,Object>();
+        map4.put("new_title", "毡帽系列");
+        map4.put("new_info", "此系列服装有点cute，像不像小车夫。");
+        map4.put("new_thumb", R.drawable.i5);
+        list.add(map4);
+        Map<String, Object> map5 = new HashMap<String,Object>();
+        map5.put("new_title", "毡帽系列");
+        map5.put("new_info", "此系列服装有点cute，像不像小车夫。");
+        map5.put("new_thumb", R.drawable.i6);
+        list.add(map5);
         return list;
     }
 
@@ -110,6 +115,7 @@ public class DetialFragment extends Fragment {
             ImageView imageView = (ImageView) view.findViewById(R.id.news_thumb);
             TextView titleTextView = (TextView) view.findViewById(R.id.news_title);
             TextView contentTextView = (TextView) view.findViewById(R.id.news_info);
+
             Map<String, Object> map = getItem(i);
 
             imageView.setScaleType(ImageView.ScaleType.CENTER);
