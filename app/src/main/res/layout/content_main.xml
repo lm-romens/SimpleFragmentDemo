@@ -16,12 +16,17 @@
         android:id="@+id/master_fragment_id"
         android:name="cn.edu.neusoft.simplefragmentdemo.MasterFragment"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        tools:layout="@layout/fragment_master" />
+
     <fragment
         android:id="@+id/detial_fragment_id"
         android:name="cn.edu.neusoft.simplefragmentdemo.DetialFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/master_fragment_id"/>
+        tools:layout="@layout/fragment_detial"
+        android:layout_below="@+id/master_fragment_id"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>
