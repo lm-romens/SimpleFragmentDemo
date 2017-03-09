@@ -13,6 +13,7 @@ import android.widget.LinearLayout;
 
 import java.util.List;
 
+import me.drakeet.multitype.Items;
 import me.drakeet.multitype.MultiTypeAdapter;
 
 /**
@@ -25,6 +26,8 @@ public class MultiTestActivity extends AppCompatActivity {
     private RecyclerView listView;
     private SwipeRefreshLayout swipeRefreshLayout;
     private ListAdapter listAdapter;
+
+    private final Items dataItems = new Items();
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,6 +59,10 @@ public class MultiTestActivity extends AppCompatActivity {
         listView.setLayoutManager(layoutManager);
         swipeRefreshLayout.addView(listView,new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
         setContentView(content);
+
+        listAdapter = new ListAdapter(dataItems);
+        listAdapter.applyGlobalMultiTypePool();
+        listAdapter.registerAll(createTypePool());
     }
 
     class ListAdapter extends MultiTypeAdapter{
