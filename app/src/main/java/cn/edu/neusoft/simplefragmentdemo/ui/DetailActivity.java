@@ -1,8 +1,10 @@
-package cn.edu.neusoft.simplefragmentdemo;
+package cn.edu.neusoft.simplefragmentdemo.ui;
 
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
+
+import cn.edu.neusoft.simplefragmentdemo.fragmnet.DetialFragment;
+import cn.edu.neusoft.simplefragmentdemo.R;
 
 /**
  * @author liang mei

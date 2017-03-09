@@ -19,7 +19,7 @@
             </intent-filter>
         </activity>
         <!-- 注册activity-->
-        <activity android:name=".DetailActivity"></activity>
+        <activity android:name=".ui.DetailActivity"></activity>
     </application>
 
 </manifest>
