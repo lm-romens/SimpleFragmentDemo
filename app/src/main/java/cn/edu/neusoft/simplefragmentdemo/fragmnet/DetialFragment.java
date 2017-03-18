@@ -1,4 +1,4 @@
-package cn.edu.neusoft.simplefragmentdemo;
+package cn.edu.neusoft.simplefragmentdemo.fragmnet;
 
 import android.content.Context;
 import android.net.Uri;
@@ -19,6 +19,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import cn.edu.neusoft.simplefragmentdemo.R;
 
 
 public class DetialFragment extends Fragment {

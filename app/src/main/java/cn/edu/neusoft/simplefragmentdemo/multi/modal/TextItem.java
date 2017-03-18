@@ -6,5 +6,5 @@ package cn.edu.neusoft.simplefragmentdemo.multi.modal;
  * @description
  */
 
-public class TextItem{
+public class TextItem extends Cell{
 }
