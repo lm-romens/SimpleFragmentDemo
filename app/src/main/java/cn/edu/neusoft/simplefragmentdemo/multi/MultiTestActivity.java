@@ -68,12 +68,6 @@ public class MultiTestActivity extends AppCompatActivity {
         listAdapter.registerAll(createTypePool());
     }
 
-    private MultiTypePool createTypePool(){
-        MultiTypePool pool=new MultiTypePool();
-        pool.register(TextItem.class,new TextItemProvider());
-        return pool;
-    }
-
     class ListAdapter extends MultiTypeAdapter{
 
         public ListAdapter(@NonNull List<?> items) {
