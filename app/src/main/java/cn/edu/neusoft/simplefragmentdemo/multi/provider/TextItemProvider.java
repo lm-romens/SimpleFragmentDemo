@@ -21,6 +21,7 @@ public class TextItemProvider extends ItemViewProvider<TextItem,MultiTypeHolder>
     @NonNull
     @Override
     protected MultiTypeHolder onCreateViewHolder(@NonNull LayoutInflater inflater, @NonNull ViewGroup parent) {
+
         return null;
     }
 

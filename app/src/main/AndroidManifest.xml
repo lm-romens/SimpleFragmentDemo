@@ -20,6 +20,7 @@
         </activity>
         <!-- 注册activity-->
         <activity android:name=".ui.DetailActivity"></activity>
+        <activity android:name=".ui.TestChartActivity"></activity>
     </application>
 
 </manifest>

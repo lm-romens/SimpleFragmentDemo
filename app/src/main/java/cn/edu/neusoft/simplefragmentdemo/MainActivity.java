@@ -10,6 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import cn.edu.neusoft.simplefragmentdemo.ui.DetailActivity;
+import cn.edu.neusoft.simplefragmentdemo.ui.TestChartActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,8 +27,9 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 //                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
 //                        .setAction("Action", null).show();
-                startActivity(new Intent(MainActivity.this,DetailActivity.class));
-                //从一个activity跳到另一个activity的写法，（一个页面到另一个页面）DetailActivity必须在主配置文件（AndroidManifest.xml）里面注册
+                startActivity(new Intent(MainActivity.this,TestChartActivity.class));
+                //从一个activity跳到另一个activity的写法，
+                // （一个页面到另一个页面）DetailActivity必须在主配置文件（AndroidManifest.xml）里面注册
             }
         });
     }

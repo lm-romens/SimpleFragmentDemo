@@ -21,7 +21,7 @@
 
     <fragment
         android:id="@+id/detial_fragment_id"
-        android:name="cn.edu.neusoft.simplefragmentdemo.fragmnet.DetialFragment"
+        android:name="cn.edu.neusoft.simplefragmentdemo.fragment.DetialFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:layout="@layout/fragment_detial"

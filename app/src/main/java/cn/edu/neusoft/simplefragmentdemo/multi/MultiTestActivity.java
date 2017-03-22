@@ -13,8 +13,11 @@ import android.widget.LinearLayout;
 
 import java.util.List;
 
+import cn.edu.neusoft.simplefragmentdemo.multi.modal.TextItem;
+import cn.edu.neusoft.simplefragmentdemo.multi.provider.TextItemProvider;
 import me.drakeet.multitype.Items;
 import me.drakeet.multitype.MultiTypeAdapter;
+import me.drakeet.multitype.MultiTypePool;
 
 /**
  * @author liang mei
@@ -63,6 +66,12 @@ public class MultiTestActivity extends AppCompatActivity {
         listAdapter = new ListAdapter(dataItems);
         listAdapter.applyGlobalMultiTypePool();
         listAdapter.registerAll(createTypePool());
+    }
+
+    private MultiTypePool createTypePool(){
+        MultiTypePool pool=new MultiTypePool();
+        pool.register(TextItem.class,new TextItemProvider());
+        return pool;
     }
 
     class ListAdapter extends MultiTypeAdapter{
